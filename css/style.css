@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+#app{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #288cde;
+	font-family: Calibri;
+	font-weight: 400;
+	font-size: 14px;
+	color: #262626;
+}
+ul{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 250px;
+	height: 160px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+li{
+	float: left;
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	list-style: none;
+}
+li.error{
+	text-decoration: line-through;
+	color: #b7b7b7;
