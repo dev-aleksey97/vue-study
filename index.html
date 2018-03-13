@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js example</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+	
+	<div id="app">
+		<ul>
+			<li v-for="city in cities" :class="{ 'error': city.status }">
+				{{ city.name }}
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		new Vue ({
+			el: "#app",
+			data: {
+				cities: [
+					{
+						name: 'Донецк',
+						status: false
+					},
+					{
+						name: 'Краматорск',
+						status: true
+					},
+					{
+						name: 'Макеевка',
+						status: false
+					},
+					{
+						name: 'Ханжонково',
+						status: false
+					}
+				]// end cities
+			}// end data
+		})// end vue
+	</script>
+</body>
+</html>
